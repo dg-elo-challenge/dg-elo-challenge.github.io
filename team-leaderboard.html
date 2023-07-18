@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Elo Challenge SoSe 2022</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- styles -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link type="text/css" href="/style/team-leaderboard.css" rel="stylesheet" />
+    <link type="text/css" href="/style/nav/navbar.css" rel="stylesheet" />
+    <link type="text/css" href="/style/board.css" rel="stylesheet" />
+    <link type="text/css" href="./style/app.css" rel="stylesheet" />
+
+    <script src="/src/component.js"></script>
+    <script src="/src/navbar.js"></script>
+    <script src="/src/get_player_data.js"></script>
+    <script src="/src/players.js"></script>
+  </head>
+  <body>
+    <div id="my-container"></div>
+    <script defer>
+      let x = document.getElementById("my-container");
+      console.log(x);
+      x.appendChild(new Navbar("./").content());
+    </script>
+
+    <!-- leaderboard start -->
+
+    <div class="leaderboard">
+      <div class="content">
+        <div class="columns">
+          <div class="column team-leaderboard">
+            <h1 class="team-leaderboard-header">Team ladder climb challenge</h1>
+            <table mat-table class="table table-dark team-leaderboard">
+              <thead>
+                <tr>
+                  <th scope="col">Place</th>
+                  <th scope="col">Team Name</th>
+                  <th scope="col">Elo</th>
+                </tr>
+              </thead>
+              <tbody id="table-content"></tbody>
+
+              <!-- <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+                  <td mat-cell *matCellDef="let element">
+                  <button mat-icon-button 
+                      aria-label="expand row" 
+                      (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()"
+                      type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off"
+                      >
+                      <mat-icon *ngIf="expandedElement !== element">keyboard_arrow_down</mat-icon>
+                      <mat-icon *ngIf="expandedElement === element">keyboard_arrow_up</mat-icon>
+                  </button>
+                  </td> -->
+
+              <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/team-leaderboard.js" type="module"></script>
+    <!-- leaderboard end -->
+  </body>
+</html>

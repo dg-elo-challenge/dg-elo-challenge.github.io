@@ -1,0 +1,70 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-container {
+  /* @extends %container; */
+
+  position: absolute;
+  top: 60%;
+  right: 50%;
+}
+
+/* .topnav a {
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  text-decoration: none;
+  background-color: #ddd;
+  color: black;
+} */
+
+.topnav a {
+  --b: 0.1em; /* the thickness of the line */
+  --c: #f8b878; /* the color of the line... */
+
+  color: #ffff !important;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%, #f8b878 0) 0% 
+    calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
+  text-decoration: none;
+}
+.topnav a:hover {
+  --_p: 100%;
+  --_s: 0.3s;
+}
+.topnav img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  margin-right: 1rem;
+}

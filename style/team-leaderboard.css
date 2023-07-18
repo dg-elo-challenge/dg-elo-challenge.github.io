@@ -1,0 +1,141 @@
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: rgb(45, 4, 4);
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #7909094a;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description {
+  padding: 16px;
+  color: #f8b878; /*#ff8243 Mango Tango*/
+}
+
+/*--------------------
+Body
+--------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*--------------------
+Leaderboard
+--------------------*/
+.leaderboard {
+  /* for centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  /* min-width: 200px; */
+  background: linear-gradient(to bottom, #3a404d, #181c26);
+  border-radius: 30px;
+  box-shadow: 0 7px 30px rgba(62, 9, 11, 0.3);
+}
+
+.leaderboard h1 {
+  font-size: 25px;
+  color: #e1e1e1;
+  padding: 25px 25px 25px 25px;
+  height: 20%;
+  /* position: relative;
+  top: 3px;
+  margin-right: 25px;
+  vertical-align: baseline; */
+}
+
+.leaderboard thead {
+  font-size: 18px;
+  color: #e1e1e1;
+  padding: 25px 25px 25px;
+}
+
+.leaderboard h1 svg {
+  width: 25px;
+  height: 26px;
+  position: relative;
+  top: 3px;
+  margin-right: 25px;
+  vertical-align: baseline;
+}
+
+.leaderboard table {
+  background: linear-gradient(to bottom, #212429, #181c26);
+  color: #f8b878; /*#ff8243 Mango Tango*/
+  /* border-radius: 30px; */
+  border-end-end-radius: 30px;
+  border-end-start-radius: 30px;
+}
+
+.bigger {
+  height: 75px;
+  position: center;
+  vertical-align: middle;
+  color: #f8b878;
+  font-size: large;
+}
+
+.the-most {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 50vw;
+  max-width: 200px;
+  padding: 10px;
+}
+
+.the-most img {
+  max-width: 100%;
+}
+
+.team-leaderboard {
+  position: relative;
+  /* width: 500px;
+  height: 780px; */
+  background: linear-gradient(to bottom, #3a404d, #181c26);
+  border-radius: 30px;
+  box-shadow: 0 7px 30px rgba(62, 9, 11, 0.3);
+}
+
+.link a,
+a:visited,
+a:link {
+  color: #f8b878; /* blue colors for links too */
+  text-decoration: underline; /* no underline */
+}

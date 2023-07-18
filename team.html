@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Elo Challenge SoSe 2022</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- styles -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link type="text/css" href="/style/styles.css" rel="stylesheet" />
+    <link type="text/css" href="/style/team/team.css" rel="stylesheet" />
+    <link type="text/css" href="/style/nav/navbar.css" rel="stylesheet" />
+
+    <!-- <link type="text/css" href="./style/app.css" rel="stylesheet" /> -->
+
+    <script src="/src/component.js"></script>
+    <script src="/src/navbar.js"></script>
+    <script src="/src/get_player_data.js"></script>
+    <script src="/src/players.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script defer>
+      let x = document.getElementById("navbar");
+      console.log(x);
+      x.appendChild(new Navbar("./").content());
+    </script>
+
+    <section class="speakers-section" style="background-image: url(https://i.ibb.co/92HJxz2/team-bg.jpg)">
+      <div class="parallax-scene parallax-scene-2 anim-icons">
+        <span
+          data-depth="0.40"
+          class="parallax-layer icon icon-circle-5"
+        ></span>
+        <span
+          data-depth="0.99"
+          class="parallax-layer icon icon-circle-5"
+        ></span>
+      </div>
+
+      <div class="container" id="team-content"></div>
+    </section>
+
+    <script src="src/team/team.js" type="module"></script>
+  </body>
+</html>
