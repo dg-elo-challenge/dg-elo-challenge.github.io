@@ -112,8 +112,8 @@ const PLAYERS = [
             "https://assets.faceit-cdn.net/avatars/944be40c-d8ee-454d-8674-d39bf67cebae_1550572449314.png",
         ),
     new Player(
-            "https://www.faceit.com/de/players/Manu-",
-            "Manu-",
+            "https://www.faceit.com/en/players/Manu",
+            "Manu",
             "DG ONE",
             "1743",
             "1743",
