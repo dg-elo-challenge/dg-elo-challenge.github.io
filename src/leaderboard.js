@@ -38,7 +38,7 @@ async function update(player, index) {
     leaderImg.setAttribute("src", player.profileImage);
   }
 
-  domSortList();
+  sortDomListByWonElo();
   sortDomLeaderList(PLAYERS);
 }
 
@@ -49,7 +49,59 @@ function sortDomLeaderList(players) {
   ReactDOM.render(players.slice(0, 3).map(createLeaderElement), leaderList);
 }
 
-function domSortList() {
+function sortDomListByWonElo() {
+  sortDomListBy(function (a, b) {
+    let aDiff = +a.childNodes.item(3).textContent;
+    let bDiff = +b.childNodes.item(3).textContent;
+    return aDiff == bDiff ? 0 : aDiff < bDiff ? 1 : -1;
+  });
+}
+
+function sortDomListByElo() {
+  sortDomListBy(function (a, b) {
+    let playerA = PLAYERS_BY_NAME[extractName(a)];
+    let playerB = PLAYERS_BY_NAME[extractName(b)];
+    if (
+      playerA == undefined ||
+      playerB == undefined ||
+      playerA.currentElo == playerB.currentElo
+    ) {
+      return 0;
+    }
+
+    return playerA.currentElo < playerB.currentElo ? 1 : -1;
+  });
+}
+
+function sortDomListByName() {
+  sortDomListBy(function (a, b) {
+    let playerAName = extractName(a);
+    let playerBName = extractName(b);
+    if (playerAName == undefined || playerBName == undefined) {
+      return 0;
+    }
+
+    return playerAName.localeCompare(playerBName);
+  });
+}
+
+function sortDomListByTeam() {
+  sortDomListBy(function (a, b) {
+    let playerATeam = extractTeam(a);
+    let playerBTeam = extractTeam(b);
+    if (playerATeam == undefined || playerBTeam == undefined) {
+      return 0;
+    }
+
+    return playerATeam.localeCompare(playerBTeam);
+  });
+}
+
+const extractTeam = (node) => node.childNodes[4].textContent.trim();
+const extractName = (node) =>
+  node.childNodes[1].childNodes[0].childNodes[1].textContent.trim();
+
+function sortDomListBy(sortFun) {
   var list = document.getElementById("list");
 
   var items = list.childNodes;
@@ -61,11 +113,7 @@ function domSortList() {
     }
   }
 
-  itemsArr.sort(function (a, b) {
-    let aDiff = +a.childNodes.item(2).textContent;
-    let bDiff = +b.childNodes.item(2).textContent;
-    return aDiff == bDiff ? 0 : aDiff < bDiff ? 1 : -1;
-  });
+  itemsArr.sort(sortFun);
 
   for (let i = 0; i < itemsArr.length; ++i) {
     itemsArr[i].firstChild.textContent = i + 1;
@@ -94,7 +142,7 @@ const App = () => {
 
       React.createElement(
         "div",
-        { className: "list", id: "list", onchange: domSortList },
+        { className: "list", id: "list", onchange: sortDomListByElo },
         PLAYERS.map(mapPlayerOnto)
       )
     ),
