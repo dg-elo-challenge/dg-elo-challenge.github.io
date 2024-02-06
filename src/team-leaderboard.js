@@ -106,7 +106,7 @@ async function update(player, index) {
   }
   try {
     player.profileImage = json.avatar;
-    player.currentElo = json.games.csgo.faceit_elo;
+    player.currentElo = json.games.cs2.faceit_elo;
   } catch {
     return;
   }

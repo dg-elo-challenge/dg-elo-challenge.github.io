@@ -34,7 +34,7 @@ async function update(player) {
   }
   try {
     player.profileImage = json.avatar ? json.avatar : '/favicon.ico';
-    player.currentElo = json.games.csgo.faceit_elo;
+    player.currentElo = json.games.cs2.faceit_elo;
   } catch {
     return;
   }
