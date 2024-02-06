@@ -149,15 +149,29 @@ const App = () => {
   ];
 };
 
+const nameHeader = "NameHeader";
+const eloHeader = "EloHeader";
+const wonEloHeader = "WonEloHeader";
+const teamHeader = "TeamHeader";
 function createTableHeader() {
   return React.createElement(
     "div",
     { className: "table" },
     // Table definition start
     React.createElement("div", null, "#"),
-    React.createElement("div", null, "Name"),
-    React.createElement("div", null, "Elo"),
-    React.createElement("div", null, "Team")
+    React.createElement(
+      "div",
+      { id: nameHeader, class: "sortable" },
+      null,
+      "Name"
+    ),
+    React.createElement("div", { id: eloHeader, class: "sortable" }, "Elo"),
+    React.createElement(
+      "div",
+      { id: wonEloHeader, class: "sortable" },
+      "Won elo"
+    ),
+    React.createElement("div", { id: teamHeader, class: "sortable" }, "Team")
   );
 }
 
@@ -183,6 +197,14 @@ function mapPlayerOnto(leader, index) {
       )
     ),
     // Elo
+    React.createElement(
+      "span",
+      { id: `${leader.nickname}_elo`, name: "elo" },
+      " ",
+      leader.currentElo,
+      " "
+    ),
+    // Won Elo
     React.createElement(
       "span",
       { id: `${leader.nickname}_diff`, name: "diff" },
