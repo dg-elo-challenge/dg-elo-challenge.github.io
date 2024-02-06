@@ -240,3 +240,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.sortable {
+  cursor: pointer;
+}
