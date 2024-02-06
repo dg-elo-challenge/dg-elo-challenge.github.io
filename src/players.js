@@ -21,158 +21,161 @@ class Player {
   }
 }
 
-
 const PLAYERS = [
-    new Player(
-            "https://www.faceit.com/de/players/Lipskii",
-            "Lipskii",
-            "DG FOUR",
-            "1361",
-            "1361",
-            "https://distribution.faceit-cdn.net/images/007a0c37-bb3c-4322-9010-94603eda6888.jpeg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/fludi_",
-            "fludi",
-            "DG TWO",
-            "1081",
-            "1081",
-            "https://distribution.faceit-cdn.net/images/b0177d82-aed9-429b-9358-5010c1693595.jpeg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/flop7",
-            "flop7",
-            "DG TWO",
-            "1285",
-            "1285",
-            "https://assets.faceit-cdn.net/avatars/f97d445f-53c7-4d72-ad5c-c4ecf1e1785b_1556020906891.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/Megatanker13",
-            "Mega",
-            "DG TWO",
-            "1594",
-            "1594",
-            "https://assets.faceit-cdn.net/avatars/dde0e412-2f17-4b42-b180-0449d7be3f8f_1631705829461.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/Veptis",
-            "Veptis | Jan",
-            "Noch kein Team",
-            "1047",
-            "1047",
-            "https://assets.faceit-cdn.net/avatars/b00faa33-64c7-41ee-b575-2142117f8656_1550572016678.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/godBECK",
-            "Beck",
-            "DG Alumni",
-            "1495",
-            "1495",
-            "https://distribution.faceit-cdn.net/images/79e6c324-b837-4381-8cd6-2cd5a62897d1.jpeg",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/Fandjayjay",
-            "Fandjayjay",
-            "DG FOUR",
-            "1729",
-            "1729",
-            "https://distribution.faceit-cdn.net/images/255ef207-27fe-4d49-8aa2-5c75f353c0a9.jpeg",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/TeeJay2537",
-            "teejaey",
-            "DG TWO",
-            "1619",
-            "1619",
-            "https://assets.faceit-cdn.net/avatars/123a19ce-e2d2-4e40-9112-44fe1dc69610_1550531941303.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/Fiiinnnnn53",
-            "Finn",
-            "DG ONE",
-            "1849",
-            "1849",
-            "https://assets.faceit-cdn.net/avatars/7ca67c73-10dd-408f-90be-2fc36a4592c8_1622127487255.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/Xyra",
-            "Xyra",
-            "DG ONE",
-            "2364",
-            "2364",
-            "https://distribution.faceit-cdn.net/images/5d351b59-42b1-4f24-b6ab-71a328e3a028.jpeg",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/Eyvypee",
-            "Eyvypee",
-            "DG Alumni",
-            "2068",
-            "2068",
-            "https://assets.faceit-cdn.net/avatars/944be40c-d8ee-454d-8674-d39bf67cebae_1550572449314.png",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/Manu",
-            "Manu",
-            "DG ONE",
-            "1743",
-            "1743",
-            "https://distribution.faceit-cdn.net/images/246f982e-730e-4985-ada3-0798c2ba9381.jpeg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/Trexxu",
-            "Trexx",
-            "DG Alumni",
-            "1969",
-            "1969",
-            "https://assets.faceit-cdn.net/avatars/c6c8e77d-246d-48fc-aa7a-b1edd5e15650_1565957694661.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/_MvM_",
-            "MvM",
-            "DG ONE",
-            "2145",
-            "2145",
-            "https://assets.faceit-cdn.net/avatars/8776bed7-ea84-4bbb-9d60-dab0508ae453_1550608845862.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/en/players/iTitusDE",
-            "iTitus",
-            "DG TWO",
-            "1132",
-            "1132",
-            "https://assets.faceit-cdn.net/avatars/3f983adb-15e1-43bb-8429-7bbef3102a7c_1633555628751.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/Melly-y",
-            "Melly",
-            "DG Alumni",
-            "1857",
-            "1857",
-            "https://assets.faceit-cdn.net/avatars/193f971b-efbf-4b50-ac2a-1f9f9dcbc28c_1550546439916.jpg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/snakehead21",
-            "Snakehead2_1",
-            "DG TWO",
-            "1662",
-            "1662",
-            "https://assets.faceit-cdn.net/avatars/e82b7822-7b93-49c6-aad5-d5fd9778d0b7_1550807004363.png",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/Aqrcn",
-            "aqrcN",
-            "Noch kein Team",
-            "1406",
-            "1406",
-            "https://distribution.faceit-cdn.net/images/3f7aac74-88f9-4b3f-9d65-27af0809c921.jpeg",
-        ),
-    new Player(
-            "https://www.faceit.com/de/players/sykkkkkk",
-            "syk",
-            "DG Alumni",
-            "1952",
-            "1952",
-            "https://distribution.faceit-cdn.net/images/535df92d-50a4-4f63-bc57-a425d807e7ef.jpeg",
-        )
-]
+  new Player(
+    "https://www.faceit.com/de/players/Lipskii",
+    "Lipskii",
+    "DG FOUR",
+    "1361",
+    "1361",
+    "https://distribution.faceit-cdn.net/images/007a0c37-bb3c-4322-9010-94603eda6888.jpeg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/fludi_",
+    "fludi",
+    "DG TWO",
+    "1081",
+    "1081",
+    "https://distribution.faceit-cdn.net/images/b0177d82-aed9-429b-9358-5010c1693595.jpeg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/flop7",
+    "flop7",
+    "DG TWO",
+    "1285",
+    "1285",
+    "https://assets.faceit-cdn.net/avatars/f97d445f-53c7-4d72-ad5c-c4ecf1e1785b_1556020906891.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/Megatanker13",
+    "Mega",
+    "DG TWO",
+    "1594",
+    "1594",
+    "https://assets.faceit-cdn.net/avatars/dde0e412-2f17-4b42-b180-0449d7be3f8f_1631705829461.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/Veptis",
+    "Veptis | Jan",
+    "Noch kein Team",
+    "1047",
+    "1047",
+    "https://assets.faceit-cdn.net/avatars/b00faa33-64c7-41ee-b575-2142117f8656_1550572016678.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/godBECK",
+    "Beck",
+    "DG Alumni",
+    "1495",
+    "1495",
+    "https://distribution.faceit-cdn.net/images/79e6c324-b837-4381-8cd6-2cd5a62897d1.jpeg"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/Fandjayjay",
+    "Fandjayjay",
+    "DG FOUR",
+    "1729",
+    "1729",
+    "https://distribution.faceit-cdn.net/images/255ef207-27fe-4d49-8aa2-5c75f353c0a9.jpeg"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/TeeJay2537",
+    "teejaey",
+    "DG TWO",
+    "1619",
+    "1619",
+    "https://assets.faceit-cdn.net/avatars/123a19ce-e2d2-4e40-9112-44fe1dc69610_1550531941303.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/Fiiinnnnn53",
+    "Finn",
+    "DG ONE",
+    "1849",
+    "1849",
+    "https://assets.faceit-cdn.net/avatars/7ca67c73-10dd-408f-90be-2fc36a4592c8_1622127487255.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/Xyra",
+    "Xyra",
+    "DG ONE",
+    "2364",
+    "2364",
+    "https://distribution.faceit-cdn.net/images/5d351b59-42b1-4f24-b6ab-71a328e3a028.jpeg"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/Eyvypee",
+    "Eyvypee",
+    "DG Alumni",
+    "2068",
+    "2068",
+    "https://assets.faceit-cdn.net/avatars/944be40c-d8ee-454d-8674-d39bf67cebae_1550572449314.png"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/Manu",
+    "Manu",
+    "DG ONE",
+    "1743",
+    "1743",
+    "https://distribution.faceit-cdn.net/images/246f982e-730e-4985-ada3-0798c2ba9381.jpeg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/Trexxu",
+    "Trexx",
+    "DG Alumni",
+    "1969",
+    "1969",
+    "https://assets.faceit-cdn.net/avatars/c6c8e77d-246d-48fc-aa7a-b1edd5e15650_1565957694661.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/_MvM_",
+    "MvM",
+    "DG ONE",
+    "2145",
+    "2145",
+    "https://assets.faceit-cdn.net/avatars/8776bed7-ea84-4bbb-9d60-dab0508ae453_1550608845862.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/en/players/iTitusDE",
+    "iTitus",
+    "DG TWO",
+    "1132",
+    "1132",
+    "https://assets.faceit-cdn.net/avatars/3f983adb-15e1-43bb-8429-7bbef3102a7c_1633555628751.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/Melly-y",
+    "Melly",
+    "DG Alumni",
+    "1857",
+    "1857",
+    "https://assets.faceit-cdn.net/avatars/193f971b-efbf-4b50-ac2a-1f9f9dcbc28c_1550546439916.jpg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/snakehead21",
+    "Snakehead2_1",
+    "DG TWO",
+    "1662",
+    "1662",
+    "https://assets.faceit-cdn.net/avatars/e82b7822-7b93-49c6-aad5-d5fd9778d0b7_1550807004363.png"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/Aqrcn",
+    "aqrcN",
+    "Noch kein Team",
+    "1406",
+    "1406",
+    "https://distribution.faceit-cdn.net/images/3f7aac74-88f9-4b3f-9d65-27af0809c921.jpeg"
+  ),
+  new Player(
+    "https://www.faceit.com/de/players/sykkkkkk",
+    "syk",
+    "DG Alumni",
+    "1952",
+    "1952",
+    "https://distribution.faceit-cdn.net/images/535df92d-50a4-4f63-bc57-a425d807e7ef.jpeg"
+  ),
+];
+
+const PLAYERS_BY_NAME = Object.fromEntries(
+  PLAYERS.map((player) => [player.name.trim(), player])
+);
