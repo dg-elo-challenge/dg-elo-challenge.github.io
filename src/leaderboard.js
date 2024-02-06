@@ -240,11 +240,7 @@ function createLeaderElement(leader, index) {
           )
         ),
 
-        React.createElement(
-          "div",
-          { className: "leaderName" },
-          leader.name
-        ),
+        React.createElement("div", { className: "leaderName" }, leader.name),
         React.createElement(
           "span",
           { hidden: true, id: `${leader.nickname}_leader_diff_span` },
