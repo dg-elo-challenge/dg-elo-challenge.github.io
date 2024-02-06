@@ -274,8 +274,21 @@ function createLeaderElement(leader, index) {
   );
 }
 
+function initialiseSorting() {
+  [
+    [eloHeader, sortDomListByElo],
+    [wonEloHeader, sortDomListByWonElo],
+    [nameHeader, sortDomListByName],
+    [teamHeader, sortDomListByTeam],
+  ].forEach((arr) =>
+    document.getElementById(arr[0]).addEventListener("click", arr[1])
+  );
+}
+
 ReactDOM.render(
   React.createElement(App, null),
 
   document.getElementById("leaderboard-container")
 );
+
+initialiseSorting();
