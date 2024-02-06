@@ -188,7 +188,7 @@ body {
   /* player background dark*/
   background-color: #000;
   display: grid;
-  grid-template-columns: 0.4fr 4fr 2fr 2fr;
+  grid-template-columns: 0.4fr 3fr 2fr 2fr 2fr;
   align-items: center;
   min-height: 42px;
   text-align: center;
@@ -203,7 +203,7 @@ body {
   margin-right: 0.1rem;
   display: grid;
   font-size: 14px;
-  grid-template-columns: 0.4fr 4fr 1fr 2.5fr;
+  grid-template-columns: 0.4fr 3fr 2fr 2fr 2fr;
   text-align: center;
 }
 .container .table div:nth-child(2) {
