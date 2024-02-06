@@ -9,13 +9,19 @@ async function update(player, index) {
   // await for slow sorting effect.
   await Sleep(100 * index);
   const json = await FaceitApiService.getPlayer(player.nickname);
+
+  // set the elo initially if the player fetching failed
+  document.getElementById(`${player.nickname}_elo`).innerHTML =
+    levelAsHtml(-1) + " " + player.startElo;
+
   if (!json || json.error) {
     return;
   }
   try {
-    player.profileImage = json.avatar ? json.avatar : '/favicon.ico';
-    player.currentElo = json.games.csgo.faceit_elo;
-  } catch {
+    player.profileImage = json.avatar ? json.avatar : "/favicon.ico";
+    player.currentElo = json.games.cs2.faceit_elo;
+    player.level = json.games.cs2.skill_level ? json.games.cs2.skill_level : 1;
+  } catch (e) {
     return;
   }
 
@@ -23,6 +29,9 @@ async function update(player, index) {
   document
     .getElementById(`${player.nickname}_img`)
     .setAttribute("src", player.profileImage);
+
+  document.getElementById(`${player.nickname}_elo`).innerHTML =
+    levelAsHtml(player.level) + " " + player.currentElo;
 
   const leaderImg = document.getElementById(`${player.nickname}_leader_img`);
   if (leaderImg) {
