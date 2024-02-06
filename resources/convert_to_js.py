@@ -125,7 +125,12 @@ class Player {
     return player2.diff - player1.diff;
   }
 }\n\n\n'''
-                + 'const PLAYERS = [\n    ' + ',\n    '.join(js_players) + '\n]')
+                + 'const PLAYERS = [\n    ' +
+                ',\n    '.join(js_players) + '\n]'
+                + """\n\nconst PLAYERS_BY_NAME = Object.fromEntries(
+  PLAYERS.map((player) => [player.name.trim(), player])
+);
+""")
 
 
 if __name__ == '__main__':
