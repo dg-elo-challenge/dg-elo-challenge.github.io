@@ -254,7 +254,7 @@ function createLeaderElement(leader, index) {
               xmlns: "http://www.w3.org/2000/svg",
               viewBox: "0 0 100 50",
             },
-
+            // Crown
             React.createElement("polygon", {
               className: "cls-1",
               points: "12.7 50 87.5 50 100 0 75 25 50 0 25.6 25 0 0 12.7 50",
