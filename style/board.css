@@ -33,8 +33,8 @@ body {
 }
 
 .container {
-  width: 500px;
-  height: 800px;
+  max-width: 500px;
+  max-height: 800px;
   
   background-color: black;
   margin: auto;
@@ -212,8 +212,8 @@ body {
   margin-left: 5px;
 }
 .container .table .image {
-  width: 20px;
-  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
 }
 .container .playerslist {
   margin-top: 6rem;
@@ -233,7 +233,7 @@ body {
 }
 .container .list {
   overflow: scroll;
-  height: 32.5rem;
+  max-height: 32rem;
   overflow-x: hidden;
 }
 
