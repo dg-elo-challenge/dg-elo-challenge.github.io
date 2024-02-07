@@ -8,7 +8,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  overflow: clip;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .list::-webkit-scrollbar-track {
@@ -35,9 +36,11 @@ body {
 .container {
   max-width: 500px;
   max-height: 800px;
-  
-  background-color: black;
+
   margin: auto;
+  margin-top: 5%;
+
+  background-color: black;
   font-family: "Amatic SC";
   /* margin: auto;
   margin-top: 10%;
@@ -45,12 +48,6 @@ body {
   /* padding: 1rem; */
   border-radius: 5px;
   box-shadow: 7px 9px 7px #00000052;
-
-  /*for centering */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .container .leader {
   display: flex;

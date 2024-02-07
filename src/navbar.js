@@ -16,7 +16,7 @@ class Navbar extends Component {
 
   content() {
     let nav = document.createElement("nav");
-    nav.className = "navbar fixed-top navbar-expand-sm navbar-dark bg-dark";
+    nav.className = "navbar navbar-expand-sm navbar-dark bg-dark";
 
     let div = document.createElement("div");
     div.id = "topnav";
