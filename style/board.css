@@ -233,6 +233,7 @@ body {
   overflow: scroll;
   max-height: 32rem;
   overflow-x: hidden;
+  margin-bottom: 5%;
 }
 
 .player a {
